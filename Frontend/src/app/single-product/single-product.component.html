@@ -1,0 +1,404 @@
+   <!-- Start: Cart Sidebar -->
+   <section class="cart_sidebar_info transition-3">
+    <div class="info_inner transition-3">
+        <div class="menu_sidebar_logo">
+            <img src="images/footer-logo.png" alt="">
+            <a href="javascript:void(0);" class="cart_sidebar_close-btn"><i class="fa fa-times"></i></a>
+        </div>
+        <!-- /. logo  -->
+
+        <!-- Cart item -->
+        <div class="cart-modal-body">
+            <h2>My Order</h2>
+            <div class="cart-modal-product-wrap">
+                <div class="cart-modal-product">
+                    <div class="cart-modal-img">
+                        <a href="shop.html">
+                            <img src="images/product2.jpg" alt="product">
+                        </a>
+                    </div>
+                    <div class="cart-modal-content">
+                        <h4><a href="shop-details.html">Organic Grassfed Butter </a></h4>
+                        <div class="cart-modal-action">
+                            <div class="cart-modal-action-item">
+                                <div class="cart-modal-quantity">
+                                    <p>1</p>
+                                    <p>x</p>
+                                    <p class="cart-quantity-price">$ 8.30</p>
+                                </div>
+                            </div>
+                            <div class="cart-modal-delete">
+                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-modal-product">
+                    <div class="cart-modal-img">
+                        <a href="shop.html">
+                            <img src="images/product3.jpg" alt="product">
+                        </a>
+                    </div>
+                    <div class="cart-modal-content">
+                        <h4><a href="shop-details.html">Organic Grassfed Butter </a></h4>
+                        <div class="cart-modal-action">
+                            <div class="cart-modal-action-item">
+                                <div class="cart-modal-quantity">
+                                    <p>1</p>
+                                    <p>x</p>
+                                    <p class="cart-quantity-price">$ 12.50</p>
+                                </div>
+                            </div>
+                            <div class="cart-modal-delete">
+                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-modal-total">
+                <p>Total</p>
+                <h3>$45.00</h3>
+            </div>
+            <div class="cart-modal-button">
+                <a href="checkout.html" class="slider_btn_one more-link ">Proceed To Checkout</a>
+                <a href="cart.html" class="slider_btn_one more-link ">View Shopping Cart</a>
+            </div>
+        </div>
+        <!-- end: Cart item -->
+
+    </div>
+    <!-- /. info_inner-->
+</section>
+<div class="body-overlay transition-3"></div>
+<!-- Start: Cart Sidebar -->
+
+
+<!-- breadcrumb -->
+<header class="breadcrumb-section">
+    <!-- Start: Header Content -->
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-sm-12">
+                <!-- Headline Goes Here -->
+                <h3>Single Shop</h3>
+                <p><a href="index.html"> <i class="fal fa-home-alt"></i> Home </a> <i
+                        class="fas fa-chevron-right"></i> Shop Detail </p>
+            </div>
+        </div>
+        <!-- End: .row -->
+    </div>
+    <!-- End: Header Content -->
+</header>
+<!--/. breadcrumb   
+==================================================-->
+
+
+
+<!-- End: Shop Details Section 
+==================================================-->
+<div class="shop-product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="shop-products">
+                    <div class="single-item-detail">
+                        <div class="product-thumbnail">
+                            <div class="single-thumbnail-big">
+                                <a class="project-link" href="../../assets/images/product2.jpg" tabindex="0">
+                                    <img src="../../assets/images/product2.jpg" alt="">
+                                </a>
+                                <a class="project-link" href="../../assets/images/product2.jpg" tabindex="0">
+                                    <img src="../../assets/images/product2.jpg" alt="">
+                                </a>
+                                <a class="project-link" href="../../assets/images/product2.jpg" tabindex="0">
+                                    <img src="../../assets/images/product2.jpg" alt="">
+                                </a>
+                                <div class="3 single-thumb" data-slick-index="3">
+                                    <img src="../../assets/images/product2.jpg" alt="thumb1">
+                                </div>
+                               
+                            </div>
+                            <div class="single-thumbnail-small row">
+                                <div class="1 single-thumb" data-slick-index="1">
+                                    <img src="../../assets/images/product2.jpg" alt="thumb1">
+                                </div>
+                                <div class="2 single-thumb" data-slick-index="2">
+                                    <img src="../../assets/images/product2.jpg" alt="thumb1">
+                                </div>
+                                <div class="3 single-thumb" data-slick-index="3">
+                                    <img src="../../assets/images/product2.jpg" alt="thumb1">
+                                </div>
+                                <div class="3 single-thumb" data-slick-index="3">
+                                    <img src="../../assets/images/product2.jpg" alt="thumb1">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="allproduct-info">
+                    <div class="tittle_product">
+                        <span class="product-sub-tit">{{ product.category }}</span>
+                        <h4>{{ product.name }} </h4>
+                    </div>
+                    <div class="allproduct-price-area">
+                        <span class="price">
+                            <span>₹{{ product.price }}</span>
+                          
+                        </span>
+                        
+                    </div>
+                    <div class="p-content">
+                        <p class="d-content">
+                            {{product.description}}</p>
+                    </div>
+                    <div class="cart-quantity">
+                        <div class="cart-plus-minus">
+                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1">
+                        </div>
+                    </div>
+                    <div class="allchoices">
+                        <div class="choice-icon">
+                            <ul>
+                                <li>
+                                    <a class="text-uppercase adtocart" href="cart.html">add to cart</a>
+                                </li>
+                                <li>
+                                    <a href=""><span class="heart"><i class="fa fa-heart"></i></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="categories-area">
+                        <p class="category"><span>Number</span></p>
+                        <span> {{product.number}}</span>
+                    </div>
+                    <div class="categories-area">
+                        <p class="category"><span>Weight</span></p>
+                        <ul>
+                            <li><a href="" class="">{{product.weight}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="categories-area">
+                        <p class="category"><span>Tags </span> </p>
+                        <ul>
+                            <li><a href="" class="">{{product.item}}</a></li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="categories-area share-area">
+                        <p class="category"><span>Color </span> </p>
+                        <ul>
+                            <li>Off White</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- End:Footer Section 
+==================================================-->
+
+
+
+<!--  Start: Related Product section
+=============================================-->
+<section class="shop-section related_product_section">
+    <div class="container">
+        <!-- Start: Heading -->
+        <div class="base-header">
+            <span class="heading_small"> Products </span>
+            <h2>Related Products </h2>
+        </div>
+        <!-- End: Heading -->
+        <div class="row">
+            <div class="shop-carousel" id="shop_carousel">
+                <div class="product-wrap">
+                    <!-- product-item -->
+                    <div class="product-img">
+                        <img src="images/product1.jpg" alt="image">
+                        <span class="prod_badges">
+                            <span class="sale">-10%</span>
+                            <span class="new">New</span>
+                        </span>
+                        <div class="prod_love">
+                            <a class="cart-icon" href="single-product.html"><i class="fal fa-shopping-cart"></i></a>
+                            <a class="fav-icon" href="#" tabindex="0"><i class="fal fa-heart"></i></a>
+                            <a class="view-icon" href="#" tabindex="0"><i class="fal fa-vector-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="single-product.html">
+                            <h4>Pecorino Romano </h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">$23.50</span>
+                            <span class="old">$55.50</span>
+                        </p>
+                    </div>
+                    <!-- End: .product-item -->
+                </div>
+                <!-- /. product-wrap -->
+
+                <div class="product-wrap">
+                    <!-- product-item -->
+                    <div class="product-img">
+                        <img src="images/product2.jpg" alt="image">
+                        <span class="prod_badges">
+                            <span class="sale">-10%</span>
+                            <span class="new">New</span>
+                        </span>
+                        <div class="prod_love">
+                            <a class="cart-icon" href="single-product.html"><i class="fal fa-shopping-cart"></i></a>
+                            <a class="fav-icon" href="#" tabindex="0"><i class="fal fa-heart"></i></a>
+                            <a class="view-icon" href="#" tabindex="0"><i class="fal fa-vector-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="single-product.html">
+                            <h4>Evaporated Milk </h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">$23.50</span>
+                            <span class="old">$55.50</span>
+                        </p>
+                    </div>
+                    <!-- End: .product-item -->
+                </div>
+                <!-- /. product-wrap -->
+
+                <div class="product-wrap">
+                    <!-- product-item -->
+                    <div class="product-img">
+                        <img src="images/product3.jpg" alt="image">
+                        <span class="prod_badges">
+                            <span class="sale">-10%</span>
+                            <span class="new">New</span>
+                        </span>
+                        <div class="prod_love">
+                            <a class="cart-icon" href="single-product.html"><i class="fal fa-shopping-cart"></i></a>
+                            <a class="fav-icon" href="#" tabindex="0"><i class="fal fa-heart"></i></a>
+                            <a class="view-icon" href="#" tabindex="0"><i class="fal fa-vector-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="single-product.html">
+                            <h4>Ricotta Salata </h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">$23.50</span>
+                            <span class="old">$55.50</span>
+                        </p>
+                    </div>
+                    <!-- End: .product-item -->
+                </div>
+                <!-- /. product-wrap -->
+
+                <div class="product-wrap">
+                    <!-- product-item -->
+                    <div class="product-img">
+                        <img src="images/product4.jpg" alt="image">
+                        <span class="prod_badges">
+                            <span class="sale">-10%</span>
+                            <span class="new">New</span>
+                        </span>
+                        <div class="prod_love">
+                            <a class="cart-icon" href="single-product.html"><i class="fal fa-shopping-cart"></i></a>
+                            <a class="fav-icon" href="#" tabindex="0"><i class="fal fa-heart"></i></a>
+                            <a class="view-icon" href="#" tabindex="0"><i class="fal fa-vector-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="single-product.html">
+                            <h4>Pecorino Romano </h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">$23.50</span>
+                            <span class="old">$55.50</span>
+                        </p>
+                    </div>
+                    <!-- End: .product-item -->
+                </div>
+                <!-- /. product-wrap -->
+
+                <div class="product-wrap">
+                    <!-- product-item -->
+                    <div class="product-img">
+                        <img src="images/product2.jpg" alt="image">
+                        <span class="prod_badges">
+                            <span class="sale">-10%</span>
+                            <span class="new">New</span>
+                        </span>
+                        <div class="prod_love">
+                            <a class="cart-icon" href="single-product.html"><i class="fal fa-shopping-cart"></i></a>
+                            <a class="fav-icon" href="#" tabindex="0"><i class="fal fa-heart"></i></a>
+                            <a class="view-icon" href="#" tabindex="0"><i class="fal fa-vector-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="single-product.html">
+                            <h4>Evaporated Milk </h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">$23.50</span>
+                            <span class="old">$55.50</span>
+                        </p>
+                    </div>
+                    <!-- End: .product-item -->
+                </div>
+                <!-- /. product-wrap -->
+            </div>
+            <!-- /. col-md-4 -->
+        </div>
+        <!-- /. row -->
+    </div>
+    <!-- /. container -->
+    <!-- /. container -->
+</section>
+<!-- End: Related Product Section
+==================================================-->

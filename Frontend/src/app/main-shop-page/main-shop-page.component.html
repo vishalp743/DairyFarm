@@ -1,0 +1,187 @@
+
+ <!-- Start: Cart Sidebar -->
+    <section class="cart_sidebar_info transition-3">
+        <div class="info_inner transition-3">
+            <div class="menu_sidebar_logo">
+                <img src="images/footer-logo.png" alt="">
+                <a href="javascript:void(0);" class="cart_sidebar_close-btn"><i class="fa fa-times"></i></a>
+            </div>
+            <!-- /. logo  -->
+
+            <!-- Cart item -->
+            <div class="cart-modal-body">
+                <h2>My Order</h2>
+                <div class="cart-modal-product-wrap">
+                    <div class="cart-modal-product">
+                        <div class="cart-modal-img">
+                            <a href="shop.html">
+                                <img src="images/product2.jpg" alt="product">
+                            </a>
+                        </div>
+                        <div class="cart-modal-content">
+                            <h4><a href="shop-details.html">Organic Grassfed Butter </a></h4>
+                            <div class="cart-modal-action">
+                                <div class="cart-modal-action-item">
+                                    <div class="cart-modal-quantity">
+                                        <p>1</p>
+                                        <p>x</p>
+                                        <p class="cart-quantity-price">$ 8.30</p>
+                                    </div>
+                                </div>
+                                <div class="cart-modal-delete">
+                                    <a href="#"><i class="icofont-ui-delete"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-modal-product">
+                        <div class="cart-modal-img">
+                            <a href="shop.html">
+                                <img src="images/product3.jpg" alt="product">
+                            </a>
+                        </div>
+                        <div class="cart-modal-content">
+                            <h4><a href="shop-details.html">Organic Grassfed Butter </a></h4>
+                            <div class="cart-modal-action">
+                                <div class="cart-modal-action-item">
+                                    <div class="cart-modal-quantity">
+                                        <p>1</p>
+                                        <p>x</p>
+                                        <p class="cart-quantity-price">$ 12.50</p>
+                                    </div>
+                                </div>
+                                <div class="cart-modal-delete">
+                                    <a href="#"><i class="icofont-ui-delete"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-modal-total">
+                    <p>Total</p>
+                    <h3>$45.00</h3>
+                </div>
+                <div class="cart-modal-button">
+                    <a href="checkout.html" class="slider_btn_one more-link ">Proceed To Checkout</a>
+                    <a href="cart.html" class="slider_btn_one more-link ">View Shopping Cart</a>
+                </div>
+            </div>
+            <!-- end: Cart item -->
+
+        </div>
+        <!-- /. info_inner-->
+    </section>
+    <div class="body-overlay transition-3"></div>
+    <!-- Start: Cart Sidebar -->
+
+    <!-- breadcrumb -->
+    <header class="breadcrumb-section">
+        <!-- Start: Header Content -->
+        <div class="container">
+            <div class="row wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-sm-12">
+                    <!-- Headline Goes Here -->
+                    <h3>Our Shop</h3>
+                    <p><a href="index.html"> <i class="fal fa-home-alt"></i> Home </a> <i
+                            class="fas fa-chevron-right"></i> Shop </p>
+                </div>
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: Header Content -->
+    </header>
+    <!--/. breadcrumb   
+==================================================-->
+
+
+
+    <!-- Start: Our Shop  Section
+==================================================-->
+   <!-- ... your previous HTML code ... -->
+
+<!-- Start: Our Shop  Section -->
+<section class="shop-section shop-pg-shop">
+    <div class="container">
+        <div class="row shop-carousel">
+            <div class="col-sm-12 shop-filter">
+                <p class="product_count">Showing {{displayedProducts.length}} products</p>
+                <div class="select-group">
+                    <select (change)="filterProducts($event)">
+                        <option value="all">All Products</option>
+                        <option value="Milk Products">Milk Products</option>
+                        <option value="Sweet Products">Sweet Products</option>
+                        <option value="Bestseller Milk Products">Bestseller Milk Products</option>
+                        <option value="Bestseller Sweet Products">Bestseller Sweet Products</option>
+                        <option value="Festival Specials">Festival Specials</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Loop through displayedProducts for rendering -->
+            <div *ngFor="let product of displayedProducts" class="col-lg-3 col-md-6 col-sm-12">
+                <div class="product-wrap">
+                    <!-- product image -->
+                    <div class="product-img">
+                        <!-- <img [src]="product.imgpath" alt="image"> -->
+                        <img src="../../assets/images/product1.jpg" alt="image">
+                        <div class="prod_love">
+                            <a class="cart-icon"><i class="fal fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <!-- product info -->
+                    <div class="product-info">
+                        <div class="prod_rating">
+                            {{ product.weight }}
+                        </div>
+                        <a (click)="navigateToSingleProduct(product.number)">
+                            <h4>{{ product.name }}</h4>
+                        </a>
+                        <p class="prod_price">
+                            <span class="new">₹ {{ product.price }} /-</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination-link">
+            <ul>
+                <li *ngFor="let page of [].constructor(totalPages); let i = index" [class.active]="i + 1 === currentPage">
+                    <a (click)="setPage(i + 1)">{{ i + 1 }}</a>
+                </li>
+                <li [class.disabled]="currentPage === totalPages">
+                    <a (click)="setPage(currentPage + 1)"><i class="fal fa-long-arrow-right"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ... rest of your HTML code ... -->
+
+
+
+
+
+
+  
+
+    
+                <!-- /. product-wrap -->
+
+    <!-- End: Our Shop Section
+==================================================-->
+                
+
+    <!-- Start: scrollup Section 
+==================================================-->
+
+    <div class="scrollup">
+        <a href="#top"> <i class="fal fa-chevron-double-up"></i> </a>
+    </div>
+
+    <!-- End: scrollup Section 
+==================================================-->

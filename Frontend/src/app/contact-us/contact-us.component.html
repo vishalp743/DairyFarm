@@ -1,0 +1,149 @@
+
+
+
+<!-- breadcrumb -->
+<header class="breadcrumb-section">
+    <!-- Start: Header Content -->
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-sm-12">
+                <!-- Headline Goes Here -->
+                <h3>Contact Us</h3>
+                <p><a href="index.html"> <i class="fal fa-home-alt"></i> Home </a> <i
+                        class="fas fa-chevron-right"></i> Contact Us </p>
+            </div>
+        </div>
+        <!-- End: .row -->
+    </div>
+    <!-- End: Header Content -->
+</header>
+
+
+
+
+
+    <!-- Start: Contact Section 
+==================================================-->
+<section class="contact-section contact_pg_contact">
+    <div class="container">
+        <div class="contact_wrp">
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-12">
+                    <!-- Start: Heading -->
+                    <div class="base-header base_header_left">
+                        <span class="heading_small">Message</span>
+                        <h2> Get in touch </h2>
+                    </div>
+                    <!-- End: Heading -->
+                    <div class="contact_pg_address">
+                        <div class="single_con_add">
+                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
+                            <span>Location</span>
+                            <h4><a href="https://www.google.com/maps/@18.5770012,73.779191,14z?entry=ttu" target="_blank">Kothrud, Pune</a></h4>
+
+                        </div>
+                        <div class="single_con_add">
+                            <a href="#"><i class="fas fa-envelope-open-text"></i></a>
+                            <span>Email </span>
+                            <h4><a href="mailto:rebootcasai@gmail.com" target="_blank">rebootcasai@gmail.com</a></h4>
+
+                        </div>
+                        <div class="single_con_add">
+                            <a href="#"><i class="fas fa-phone-alt"></i></a>
+                            <span>Phone</span>
+                            <h4><a href="https://wa.me/919850783338?text=Hello%20from%20the%20website!" target="_blank">(+91) 9850783338</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <!--  Contact Form  -->
+                <div class="col-lg-8 col-sm-12 contact-form-warper">
+                    <form (ngSubmit)="onSubmit()" id="contact-form">
+                        <div class="row">
+                            <div class="col-lg-12 contact_col_left">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <label for="name"><i class="fal fa-user"></i>
+                                            <input class="con-field" 
+                                                   id="name" 
+                                                   type="text"
+                                                   placeholder="Your Name" 
+                                                   [(ngModel)]="formData.name" 
+                                                   name="name">
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <label for="email"><i class="fal fa-envelope"></i>
+                                            <input class="con-field" 
+                                                   id="email" 
+                                                   type="text"
+                                                   placeholder="Your Email" 
+                                                   [(ngModel)]="formData.email" 
+                                                   name="email">
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <label for="phone"><i class="fal fa-phone"></i>
+                                            <input class="con-field" 
+                                                   id="phone" 
+                                                   type="text"
+                                                   placeholder="Your Phone" 
+                                                   [(ngModel)]="formData.phone" 
+                                                   name="phone">
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <label for="subject"><i class="fal fa-sticky-note"></i>
+                                            <input class="con-field" 
+                                                   id="subject" 
+                                                   type="text"
+                                                   placeholder="Subject" 
+                                                   [(ngModel)]="formData.subject" 
+                                                   name="subject">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 contact_col_right">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <label for="message"><i class="fal fa-pencil-alt"></i>
+                                            <textarea class="con-field" 
+                                                      id="message" 
+                                                      rows="6"
+                                                      placeholder="Case Details" 
+                                                      [(ngModel)]="formData.message" 
+                                                      name="message">
+                                            </textarea>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-12 contact_col_full">
+                                        <input type="submit" id="submit-contact" class="btn-alt" value="Submit Now">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <!-- End:Contact Form  -->
+                <div class="col-sm-12 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.023938894304!2d73.7878299!3d18.5094485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb11c107e89%3A0xcf74d005bf8c6443!2sSandeep+Dairy+Farm!5e0!3m2!1sen!2sus!4v1549260798680" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="col-sm-12 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.023938894304!2d73.7878299!3d18.5094485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb11c107e89%3A0xcf74d005bf8c6443!2sSandeep+Dairy+Farm!5e0!3m2!1sen!2sus!4v1549260798680" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="col-sm-12 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.023938894304!2d73.7878299!3d18.5094485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb11c107e89%3A0xcf74d005bf8c6443!2sSandeep+Dairy+Farm!5e0!3m2!1sen!2sus!4v1549260798680" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                
+                
+            </div>
+            <!-- row /- -->
+        </div>
+    </div>
+    <!-- container /- -->
+</section>
+<!-- End : Contact Section 
+==================================================-->
